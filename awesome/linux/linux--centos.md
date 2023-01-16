@@ -96,37 +96,25 @@ rm -rf /var/lib/docker
 
 ## install tool
 
-- tree
+1. tree
 
-  ```shell
-  # 1. install
-  yum -y install tree
-  # 2. use
-  man tree
-  tree -L 2
-  ```
+   ```shell
+   # 1. install
+   yum -y install tree
+   # 2. use
+   man tree
+   tree -L 2
+   ```
 
-- zsh
+2. zsh: dotfiles-repo
 
-  ```shell
-  # 1. install zsh
-  echo $SHELL
-  yum -y install zsh
-  echo $ZSH_VERSION
-  cat /etc/shells
-  chsh -s /bin/zsh
-  # 2. install oh-my-zsh
-  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-  uninstall_oh_my_zsh zsh
-  ```
+3. nc
 
-- nc
-
-  ```shell
-  # http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm
-  # i: install; v: verbose; h: progress bar
-  rpm -ivh nc-1.84-22.el6.x86_64.rpm
-  ```
+   ```shell
+   # http://vault.centos.org/6.6/os/x86_64/Packages/nc-1.84-22.el6.x86_64.rpm
+   # i: install; v: verbose; h: progress bar
+   rpm -ivh nc-1.84-22.el6.x86_64.rpm
+   ```
 
 ---
 

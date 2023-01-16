@@ -376,38 +376,7 @@ sudo systemctl status rc-local.service
    chsh -s `which zsh`
    ```
 
-### 三、zsh 使用 alias 快速启动
-
-- 切换
-
-  ```shell
-  exec bash
-  exec zsh
-  ```
-
-- 在 ~/.bash_aliases 文件下添加
-
-  ```shell
-  touch .bash_aliases # create
-  alias cd.="cd .."
-  alias ..="cd ../.."
-  alias ...="cd ../../.."
-  alias download="cd ~/Downloads"
-  ```
-
-- 在 ~/.zshrc 文件最后添加
-
-  ```shell
-  if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-  fi
-  ```
-
-- 使配置的 alias 生效
-
-  ```shell
-  source ~/.zshrc
-  ```
+7. usage notice: dotfiles repo
 
 ---
 
